@@ -49,6 +49,11 @@ ul {
 
 .page-header {
   background-color: var(--bg-color-first);
+  display: flex;
+}
+
+.header-list {
+  display: flex;
 }
 
 .page-footer {
