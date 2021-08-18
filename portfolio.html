@@ -16,11 +16,12 @@
     
     <body>
         <!-- ВЕРХУШКА ДОКУМЕНТА -->
-        <header class="page-header">
-            <!-- Навигационные ссылки -->
-            <nav class="header-list">
+    <header class="page-header flexing-items">
+        <!-- Навигационные ссылки -->
+        <div class="container flexing-items">
+            <nav class="header-navigation-container flexing-items">
                 <a class="logo-header" href="#" lang="en">Web<span>Studio</span></a>
-                <ul class="header-list">
+                <ul class="header-links-list flexing-items">
                     <li><a class="header-links" href="./index.html">Студия</a></li>
                     <li><a class="header-links" href="./portfolio.html">Портфолио</a></li>
                     <li><a class="header-links" href="№">Контакты</a></li>
@@ -28,11 +29,12 @@
             </nav>
     
             <!-- Контакты в Хедере -->
-            <ul class="header-list">
+            <ul class="header-kontakts-list flexing-items">
                 <li><a class="header-kontakts" href="#">info@devstudio.com</a></li>
                 <li><a class="header-kontakts" href="#">+38 096 111 11 11</a></li>
             </ul>
-        </header>
+        </div>
+    </header>
 
     <!-- СРЕДИННАЯ ЧАСТЬ ДОКУМЕНТА -->
     <main class="portfolio">
@@ -40,7 +42,7 @@
         <!-- Секция Фильтр-Кнопок -->
         <section>
             <h4 class="invisible-heading">фильтр-кнопки</h4>
-            <ul>
+            <ul class="filter-buttons-list">
                 <li><button class="filter-buttons" type="button">Все</button></li>
                 <li><button class="filter-buttons" type="button">Веб-сайты</button></li>
                 <li><button class="filter-buttons" type="button">Приложения</button></li>
@@ -129,16 +131,18 @@
     </main>
 
     <!-- НИЗУШКА ДОКУМЕНТА -->
-    <footer class="page-footer">
-        <a class="logo-footer" href="#" lang="en">Web<span>Studio</span></a>
-        <!-- Контакты в Футере -->
-        <address>
-            <ul>
-                <li><a class="footer-kontakts" href="#">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li><a class="footer-kontakts" href="#">info@example.com</a></li>
-                <li><a class="footer-kontakts" href="#">+38 099 111 11 11</a></li>
-            </ul>
-        </address>
+    <footer class="page-footer flexing-items">
+        <div class="container">
+            <a class="logo-footer" href="#" lang="en">Web<span>Studio</span></a>
+            <!-- Контакты в Футере -->
+            <address>
+                <ul class="page-footer-list">
+                    <li><a class="footer-kontakts" href="#">г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li><a class="footer-kontakts" href="#">info@example.com</a></li>
+                    <li><a class="footer-kontakts" href="#">+38 099 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
     </footer>
     </body>
 

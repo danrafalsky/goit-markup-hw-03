@@ -2,6 +2,17 @@ body {
   background-color: var(--bg-color-main);
   font-family: "Roboto", sans-serif;
   color: var(--text-color-second);
+  margin: 0px;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flexing-items {
+  display: flex;
 }
 
 :root {
@@ -12,6 +23,7 @@ body {
   --button-shadow: rgba(0%, 0%, 0%, 15%);
   --filter-buttons-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  --header-border-color: #ececec;
   --portfolio-border-color: #eeeeee;
   --invisible-heading: rgba(0%, 0%, 0%, 0%);
   --heading-color: #212121;
@@ -23,6 +35,8 @@ body {
   --text-color-first: #212121;
   --text-color-second: #757575;
   --text-color-third: #ffffff;
+  /* Вертикальный отступ между секциями Главной страницы */
+  --main-sections-vertical-space: 94px;
 }
 
 /* Устранение лишнего */
@@ -36,8 +50,8 @@ li {
 }
 
 ul {
-  margin-left: 0;
-  padding-left: 0;
+  margin: 0px;
+  padding-left: 0px;
 }
 
 .invisible-heading {
@@ -49,15 +63,35 @@ ul {
 
 .page-header {
   background-color: var(--bg-color-first);
-  display: flex;
+  height: 80px;
+  margin: auto 0px;
+  border-bottom: 1px solid var(--header-border-color);
 }
 
-.header-list {
-  display: flex;
+.header-navigation-container {
+  margin: auto 0px;
+}
+
+.header-links-list {
+  margin: auto 0px auto 93px;
+  width: 294px;
+  justify-content: space-between;
+}
+
+.header-kontakts-list {
+  margin: auto 0px auto auto;
+  width: 307px;
+  justify-content: space-between;
 }
 
 .page-footer {
   background-color: var(--bg-color-third);
+  height: 252px;
+  align-items: center;
+}
+
+.page-footer-list {
+  margin-top: 20px;
 }
 
 /* ЛОГОТИП в футере и хедере */
@@ -132,19 +166,38 @@ ul {
 
 /* ГЛАВНАЯ */
 
-/* Секция Заголовка-1 */
+/* Заголовки уровней 1 и 2 */
 
 .heading-one {
-  background-color: var(--bg-color-third);
-}
-
-h1 {
   color: var(--text-color-third);
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.heading-two {
+  color: var(--heading-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+/* Секция "Заказать услугу" */
+
+.order-service-section {
+  background-color: var(--bg-color-third);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }
 
 .order-service-button {
@@ -175,6 +228,15 @@ h1 {
   background-color: var(--bg-color-first);
 }
 
+.characteristics-list {
+  justify-content: space-between;
+  padding: var(--main-sections-vertical-space) 0px;
+}
+
+.characteristics-list li {
+  width: 270px;
+}
+
 .characteristics h3 {
   color: var(--heading-color);
   font-size: 14px;
@@ -182,6 +244,7 @@ h1 {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin: 0px;
 }
 
 .characteristics p {
@@ -194,33 +257,31 @@ h1 {
 
 .what-we-do {
   background-color: var(--bg-color-first);
+  padding-bottom: var(--main-sections-vertical-space);
 }
 
-.what-we-do h2 {
-  color: var(--heading-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
+.what-we-do-list {
+  justify-content: space-between;
 }
 
 /* Секция "Наша Команда" */
 
 .our-team {
   background-color: var(--bg-color-second);
+  padding-top: var(--main-sections-vertical-space);
+  padding-bottom: var(--main-sections-vertical-space);
   letter-spacing: 0.03em;
 }
 
-.our-team h2 {
-  color: var(--heading-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+.our-team ul {
+  justify-content: space-between;
 }
 
 .our-team li {
   background-color: var(--bg-color-first);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .our-team h3 {
@@ -228,11 +289,15 @@ h1 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
+  margin: 30px 0px 10px 0px;
 }
 
 .our-team p {
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
+  margin: 0px 0px 30px 0px;
 }
 
 /* ПОРТФОЛИО */
@@ -243,10 +308,17 @@ h1 {
 
 /* Фильтр-Кнопки страницы "Портфолио" */
 
+.filter-buttons-list {
+  display: flex;
+  width: 611px;
+  margin: 94px auto 50px auto;
+  justify-content: space-between;
+}
+
 .filter-buttons {
   background-color: var(--bg-color-second);
-  width: 128px;
   height: 38px;
+  padding: 6px 22px;
   border-radius: 4px;
   border: none;
   color: var(--text-color-first);
