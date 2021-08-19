@@ -64,16 +64,16 @@ ul {
 .page-header {
   background-color: var(--bg-color-first);
   height: 80px;
-  margin: auto 0px;
+  padding: 32px 0px;
   border-bottom: 1px solid var(--header-border-color);
 }
 
 .header-navigation-container {
-  margin: auto 0px;
+  padding: 0px 0px;
 }
 
 .header-links-list {
-  margin: auto 0px auto 93px;
+  margin: 0px 0px 0px 93px;
   width: 294px;
   justify-content: space-between;
 }
