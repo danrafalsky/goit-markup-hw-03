@@ -55,6 +55,7 @@ ul {
 }
 
 .invisible-heading {
+  display: none;
   color: var(--invisible-heading);
   font-size: 0px;
 }
@@ -63,7 +64,6 @@ ul {
 
 .page-header {
   background-color: var(--bg-color-first);
-  height: 80px;
   padding: 32px 0px;
   border-bottom: 1px solid var(--header-border-color);
 }
@@ -79,7 +79,7 @@ ul {
 }
 
 .header-kontakts-list {
-  margin: auto 0px auto auto;
+  margin: 0px 0px 0px auto;
   width: 307px;
   justify-content: space-between;
 }
