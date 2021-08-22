@@ -5,10 +5,12 @@
     <meta charset="utf-8" />
     <meta name="description" content="Домашнее задание №2" />
     <title>Главная</title>
-    <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <!-- ТЕЛО ДОКУМЕНТА -->
@@ -43,46 +45,47 @@
             <button class="order-service-button" type="button">Заказать услугу</button>
         </section>
 
-        <!-- Секция положительных характеристик -->
-        <section class="characteristics">
-            <ul class="characteristics-list container flexing-items">
-                <li>
-                    <h3>Внимание к деталям</h3>
-                    <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                </li>
+        <!-- Секция "ЧЕМ МЫ ЗАНИМАЕМСЯ" -->
+        <!-- положительные характеристики -->
+        <section class="what-we-do section">
+            <div class="container">
+                <ul class="characteristics">
+                    <li>
+                        <h3>Внимание к деталям</h3>
+                        <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    </li>
 
-                <li>
-                    <h3>Пунктуальность</h3>
-                    <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                </li>
+                    <li>
+                        <h3>Пунктуальность</h3>
+                        <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                    </li>
 
-                <li>
-                    <h3>Планирование</h3>
-                    <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                </li>
+                    <li>
+                        <h3>Планирование</h3>
+                        <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    </li>
 
-                <li>
-                    <h3>Современные технологии</h3>
-                    <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                </li>
-            </ul>
-        </section>
+                    <li>
+                        <h3>Современные технологии</h3>
+                        <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    </li>
+                </ul>
 
-        <!-- Секция "Чем мы занимаемся" -->
-        <section class="what-we-do">
-            <h2 class="heading-two">Чем мы занимаемся</h2>
-            <ul class="what-we-do-list container flexing-items">
-                <li><img src="./images/box1.jpg" alt="вёрстка сайтов" width="370"></li>
-                <li><img src="./images/box2.jpg" alt="адаптивность сайтов" width="370"></li>
-                <li><img src="./images/box3.jpg" alt="создание дизайна" width="370"></li>
-            </ul>
+            <!-- "чем мы занимаемся" -->
+                <h2 class="heading-two">Чем мы занимаемся</h2>
+                <ul class="what-we-do-list container">
+                    <li><img src="./images/box1.jpg" alt="вёрстка сайтов" width="370"></li>
+                    <li><img src="./images/box2.jpg" alt="адаптивность сайтов" width="370"></li>
+                    <li><img src="./images/box3.jpg" alt="создание дизайна" width="370"></li>
+                </ul>
+            </div>
         </section>
 
         <!-- Секция "Наша команда" -->
-        <section class="our-team">
+        <section class="our-team section">
             <div class="container">
                 <h2 class="heading-two">Наша команда</h2>
-                <ul class="flexing-items">
+                <ul>
                     <li>
                         <img src="./images/team1.jpg" alt="Игорь Демьяненко" width="270">
                         <h3>Игорь Демьяненко</h3>
@@ -112,13 +115,13 @@
     </main>
 
     <!-- НИЗУШКА ДОКУМЕНТА -->
-    <footer class="page-footer flexing-items">
+    <footer class="page-footer">
         <div class="container">
             <a class="logo-footer" href="#" lang="en">Web<span>Studio</span></a>
             <!-- Контакты в Футере -->
             <address>
                 <ul class="page-footer-list">
-                    <li><a class="footer-kontakts" href="#">г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li><a class="footer-location" href="#">г. Киев, пр-т Леси Украинки, 26</a></li>
                     <li><a class="footer-kontakts" href="#">info@example.com</a></li>
                     <li><a class="footer-kontakts" href="#">+38 099 111 11 11</a></li>
                 </ul>
